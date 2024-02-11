@@ -22,10 +22,14 @@ body{margin:0; padding:0;}
 </body>
 <script>
 $('.sendRequestBtn').click(function(){
-	if(confirm("정말로 재시작 하시겠습니까?")) {
-		alert("restart");
+	if(confirm("ㄹㅇ 정말로 재시작 하시겠습니까?")) {
+		$.ajax({
+                url: 'https://tok.fail/palworld-restart/932a324f-ede0-4ae7-8a0f-09812eb82c36',
+                type: 'GET',
+                complete: function(response) {
+                    alert("요청이 완료되었습니다. 디스코드 알림을 확인해주세요.")
+                }
 	}
-		alert("aa");
     });
 </script>
 </html>
